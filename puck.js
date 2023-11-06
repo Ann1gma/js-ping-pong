@@ -37,15 +37,15 @@ class Puck
   
   checkCollision(paddle)
   {
-    var puckLeft = this.x - this.radius;
-    var puckRight = this.x + this.radius;
-    var puckBottom = this.y + this.radius;
-    var puckTop = this.y - this.radius;
+    let puckLeft = this.x - this.radius;
+    let puckRight = this.x + this.radius;
+    let puckBottom = this.y + this.radius;
+    let puckTop = this.y - this.radius;
     
-    var paddleLeft = paddle.x - paddle.w/2;
-    var paddleRight = paddle.x + paddle.w/2;
-    var paddleTop = paddle.y - paddle.h;
-    var paddleBottom = paddle.y + paddle.h;
+    let paddleLeft = paddle.x - paddle.w/2;
+    let paddleRight = paddle.x + paddle.w/2;
+    let paddleTop = paddle.y - paddle.h;
+    let paddleBottom = paddle.y + paddle.h;
     
     
     if (puckLeft < paddleRight &&
